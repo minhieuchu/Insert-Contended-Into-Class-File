@@ -12,19 +12,19 @@ To improve this limitation, our tool inserts the annotation into Java class file
 
 To compile / execute the program, Apache Commons BCEL 6.5.0 is necessary. Other versions may also work but we have not tested.
 
-### Compile
+#### Compile
 
 ```
 javac -cp .:bcel-6.5.0.jar InsertContendedIntoClassFile.java
 ```
 
-### Insert the annotation for the field `myField` in the class file `MyClass.class`
+#### Insert the annotation for the field `myField` in the class file `MyClass.class`
 
 ```
 java -cp .:bcel-6.5.0.jar InsertContendedIntoClassFile MyClass myField
 ```
 
-### Insert the annotation for the class `MyClass` itself in the class file `MyClass.class`
+#### Insert the annotation for the class `MyClass` itself in the class file `MyClass.class`
 
 ```
 java -cp .:bcel-6.5.0.jar InsertContendedIntoClassFile MyClass
